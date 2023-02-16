@@ -1,49 +1,81 @@
-## Planned Meals
-> The Alpine lodge extra-large kitchen seats 44 people.  The kitchens are perfect for large group meals and all come equipped with appropriate appliances and utensils. There is an outdoor barbecue!  There is a fridge and individual kitchens in the homes.   So there is a place to store snacks, make sure you stock up for the little ones.
+<!-- 
+  _layouts/default.html
+  customization to original Midnight theme 
+  found through GitHub Pages Themes
+ -->
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-1. **Breakfast** will be available at 8am each morning. Families will be able to serve themselves and we ask that you clean up after yourselves as well. Breakfast will close at 9:30 to allow time for clean up before activities begin.
-2.  **Morning Huddle** will be at 9:45am in the dinning hall.  This is a chance to know what the activities are and where you need to be if you are participating.
-3.  **Lunch** will be available at 12pm each day.  Supplies will be available to make your own lunch.  You can dine in the hall or take it with you depending on planned activities.  As always clean up after yourself and your family.  
-4.  **Dinner** will be available at 6pm each evening. It is strongly encouraged to eat in the hall all together so that you do not miss the 7pm Family Night directly afterwards.
-- **NOTE** - The menu for the day will be posted in the dinning hall each morning. Snacks will be left out after lunch and if any remain will be put away when dinner is being prepared.
-    
-### Monday Dinner - Head Chef Lisa (6 - 7pm)
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Leuck Family Reunion | June 26 to July 1 2023</title>
+<meta name="generator" content="Jekyll v3.9.2" />
+<meta property="og:title" content="Leuck Family Reunion" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="June 26 to July 1 2023" />
+<meta property="og:description" content="June 26 to July 1 2023" />
+<link rel="canonical" href="http://localhost:4000/food.html" />
+<meta property="og:url" content="http://localhost:4000/food.html" />
+<meta property="og:site_name" content="Leuck Family Reunion" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Leuck Family Reunion" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"June 26 to July 1 2023","headline":"Leuck Family Reunion","url":"http://localhost:4000/food.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <link rel="stylesheet" href="/assets/css/style.css?v=d1a3104d05ddc53663bbb5c3df09ca862909f31f">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script src="/assets/js/respond.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="/assets/css/ie.css">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+<!-- Setup theme-color -->
+<!-- start theme color meta headers -->
+<meta name="theme-color" content="#353535">
+<meta name="msapplication-navbutton-color" content="#353535">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<!-- end theme color meta headers -->
 
 
- 
-### Tuesday Breakfast (8-9:30am)
-> Grits and Sausage Links in the main hall
-
-### Tuesday Lunch
-> Make lunch in the dinning hall.  Pack and Go.  Eat outside or at your housing, pick up trash and leave no mess in dinning hall or grounds.
-
-### Tuesday Dinner - Head Chef Sherri (6-7pm)
+<!-- Setup Google Analytics -->
 
 
-### Wednesday Breakfast (8-9:30am)
 
-### Wednesday Lunch
-> Make lunch in the dinning hall.  Pack and Go.  Leave no mess please.  There is option to purchase food at the caverns, there is a picnic area at the site.
+<!-- You can set your favicon here -->
+<!-- link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" -->
 
-
-### Wednesday Dinner - Head Chef Angela (6-7pm)
+<!-- end custom head snippets -->
 
 
-### Thursday Breakfast (8-9:30am)
+  </head>
+  <body>
+      <div class="wrapper">
 
-### Thursday Lunch
-> Make lunch in the dinning hall.  Pack and Go.  Leave no mess please.  There will likely be some down time and extra snacks will be wanted while boating.
+<section>
+        <!-- nighthawk coding society has altered arrangement and inserted navigation that is updated in independent file -->
+        <div id="title">
+          <h1><a href=https://github.com/jm1021/leuck_reunion>Leuck Family Reunion</a></h1>
+          <p>June 26 to July 1 2023</p>
+          <hr>
+          <table>
+    <tr>
+        <td><a href="/">Home</a></td>
+        <td><a href="/housing">Housing</a></td>
+        <td><a href="/food">Food</a></td>
+        <td><a href="/activities">Activities</a></td>
+        <td><a href="/family-night">Family-Night</a></td>
+        <td><a href="/gallery">Gallery</a></td>
+    </tr>
+</table>
 
-### Thursday Dinner - Head Chef Jared/Jeremiah (6-7pm)
+</div>
 
-
-### Friday Breakfast (8-9:30am)
-
-### Friday Lunch
-> Make lunch in the dinning hall.  Pack and Go.  There are lots of places to explore and eat in the community of Shasta Lakes and Redding.
-
-### Friday Dinner - Head Chef John (6-7pm)
-
-
-### Saturday Breakfast (8-9:30am)
-
+        <!-- this is Jekyll magic, each md file in site will be inserted here -->
