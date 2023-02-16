@@ -1,4 +1,5 @@
-theme: jekyll-theme-slate
+theme: jekyll-theme-midnight
 title: "Food"
+description: "Food games and recipes"
 gitorg: https://github.com/RyanHaki/Final
 google_analytics:
