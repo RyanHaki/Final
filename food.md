@@ -3,6 +3,18 @@
   customization to original Midnight theme 
   found through GitHub Pages Themes
  -->
+<script>
+   fetch('https://172.19.59.24:8792/api/foods/', {
+      mode: 'no-cors',
+      headers: {
+         'Content-Type': 'application/json'
+      }
+   }).then(res => {
+         return res.json()
+      })
+      .then(data => console.log(data))
+</script>
+
 <html lang="en-US">
 <head>
    <style> 
@@ -13,6 +25,7 @@
 <body>
 
 <script>
+  // const foodimages = data;
 const foodimages = [
   {
     "id": 1, 
