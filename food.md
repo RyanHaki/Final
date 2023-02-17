@@ -174,9 +174,9 @@ showpic(){
 </body>
       <div class="wrapper">
 
-<section>
+<!-- <section> -->
         <!-- nighthawk coding society has altered arrangement and inserted navigation that is updated in independent file -->
-<div id="title">
+<!-- <div id="title">
   <table>
     <tr>
       <td><a href="/">Home</a></td>
@@ -187,4 +187,4 @@ showpic(){
       <td><a href="/gallery">Gallery</a></td>
     </tr>
   </table>
-</div>
+</div> -->
