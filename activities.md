@@ -48,7 +48,7 @@ function favourite_recipe() {
       document.getElementById("results").style.overflow = "hidden";
       document.getElementById("results").innerHTML = `<div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>`;
       var content = document.getElementById("searchBar").value;
-      fetch("https://fruitteam.duckdns.org/api/search/", {
+      fetch("https://fruitteam.duckdns.org/api/nutrients/", {
           "method": "POST",
           "headers": {
               "content-type": "application/json"
