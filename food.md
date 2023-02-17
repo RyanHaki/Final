@@ -176,21 +176,15 @@ showpic(){
 
 <section>
         <!-- nighthawk coding society has altered arrangement and inserted navigation that is updated in independent file -->
-        <div id="title">
-          <h1><a href=https://github.com/jm1021/leuck_reunion>Leuck Family Reunion</a></h1>
-          <p>June 26 to July 1 2023</p>
-          <hr>
-          <table>
+<div id="title">
+  <table>
     <tr>
-        <td><a href="/">Home</a></td>
-        <td><a href="/housing">Housing</a></td>
-        <td><a href="/food">Food</a></td>
-        <td><a href="/activities">Activities</a></td>
-        <td><a href="/family-night">Family-Night</a></td>
-        <td><a href="/gallery">Gallery</a></td>
+      <td><a href="/">Home</a></td>
+      <td><a href="/housing">Housing</a></td>
+      <td><a href="/food">Food</a></td>
+      <td><a href="/activities">Activities</a></td>
+      <td><a href="/family-night">Family-Night</a></td>
+      <td><a href="/gallery">Gallery</a></td>
     </tr>
-</table>
-
+  </table>
 </div>
-
-        <!-- this is Jekyll magic, each md file in site will be inserted here -->
