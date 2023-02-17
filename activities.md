@@ -280,7 +280,7 @@ function favourite_recipe() {
           })
       }).catch(E => {
           alert("c")
-          document.getElementById("results").innerHTML = "We found no items for this query!";
+          document.getElementById("results").innerHTML = "We can't connect to the database";
       })
   })
 </script>
