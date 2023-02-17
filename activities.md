@@ -196,7 +196,7 @@
 <div class="main-container">
 
   <div id="search_page">
-      <h1>What would you like to cook?</h1>
+      <h1>What food do you want to look up?</h1>
       <div>
           <input id="searchBar" type="text" placeholder="Type here">
           <button id="searchButton">Search</button>
@@ -258,7 +258,7 @@ function favourite_recipe() {
                   var html = ``;
                   Data.forEach((v) => {
                       var instruction_id = new Date().getTime().toString() + "_" + Math.random().toString();
-                      recipies[instruction_id] = [v.instructions, v.ingredients, v.title]
+                      nutrients[instruction_id] = [v.instructions, v.ingredients, v.title]
                       html = html + `
                           <div class="result">
                               <b>${v.title}</b>
@@ -269,15 +269,18 @@ function favourite_recipe() {
                               </svg> Favourite</button>
                           </div>
                       `
-                  });
+                    });
                   document.getElementById("results").innerHTML = html;
               } else {
+                alert("a")
                   document.getElementById("results").innerHTML = "We found no items for this query!";
               }
           }).catch(E => {
+              alert("b")
               document.getElementById("results").innerHTML = "We found no items for this query!";
           })
       }).catch(E => {
+          alert("c")
           document.getElementById("results").innerHTML = "We found no items for this query!";
       })
   })
