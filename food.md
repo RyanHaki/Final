@@ -4,59 +4,174 @@
   found through GitHub Pages Themes
  -->
 <html lang="en-US">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<head>
+   <style> 
+      input[type='Image'] { position: absolute; }
+   </style>   
+</head>
 
-    <!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Leuck Family Reunion | June 26 to July 1 2023</title>
-<meta name="generator" content="Jekyll v3.9.2" />
-<meta property="og:title" content="Leuck Family Reunion" />
-<meta property="og:locale" content="en_US" />
-<meta name="description" content="June 26 to July 1 2023" />
-<meta property="og:description" content="June 26 to July 1 2023" />
-<link rel="canonical" href="http://localhost:4000/food.html" />
-<meta property="og:url" content="http://localhost:4000/food.html" />
-<meta property="og:site_name" content="Leuck Family Reunion" />
-<meta property="og:type" content="website" />
-<meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Leuck Family Reunion" />
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","description":"June 26 to July 1 2023","headline":"Leuck Family Reunion","url":"http://localhost:4000/food.html"}</script>
-<!-- End Jekyll SEO tag -->
+<body>
 
-    <link rel="stylesheet" href="/assets/css/style.css?v=d1a3104d05ddc53663bbb5c3df09ca862909f31f">
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
-    <script src="/assets/js/respond.js"></script>
-    <!--[if lt IE 9]>
-      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <!--[if lt IE 8]>
-    <link rel="stylesheet" href="/assets/css/ie.css">
-    <![endif]-->
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+<script>
+const foodimages = [
+  {
+    "id": 1, 
+    "image": "https://png.pngtree.com/png-vector/20190130/ourlarge/pngtree-cute-minimalist-creative-cartoon-hamburger-png-image_611163.jpg", 
+    "name": "Burger", 
+    "points": "10"
+  }, 
+  {
+    "id": 2, 
+    "image": "https://thumbs.dreamstime.com/b/french-fries-cartoon-clipart-red-paper-box-carton-121897301.jpg", 
+    "name": "Fries", 
+    "points": "20"
+  }
+];
 
-<!-- Setup theme-color -->
-<!-- start theme color meta headers -->
-<meta name="theme-color" content="#353535">
-<meta name="msapplication-navbutton-color" content="#353535">
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<!-- end theme color meta headers -->
+console.log(foodimages);
 
+</script>
 
-<!-- Setup Google Analytics -->
+<!--
+<script>
+u1 = food(name='Burger', points='10', image='https://png.pngtree.com/png-vector/20190130/ourlarge/pngtree-cute-minimalist-creative-cartoon-hamburger-png-image_611163.jpg')
+
+    fooditems = [u1]
+
+</script>
+
+<script>
+   var data_images1 = "https://png.pngtree.com/png-vector/20190130/ourlarge/pngtree-cute-minimalist-creative-cartoon-hamburger-png-image_611163.jpg"
+   var data_images2 = "https://thumbs.dreamstime.com/b/french-fries-cartoon-clipart-red-paper-box-carton-121897301.jpg"
+   console.log(data_images1)
 
 
-
-<!-- You can set your favicon here -->
-<!-- link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" -->
-
-<!-- end custom head snippets -->
+showpic(){
+   document.getElementsByTagName('burger').src = 'https://png.pngtree.com/png-vector/20190130/ourlarge/pngtree-cute-minimalist-creative-cartoon-hamburger-png-image_611163.jpg'; 
+}
 
 
-  </head>
-  <body>
+
+</script>
+
+-->
+  
+   
+   <input type="Image" id="test1" src="" height="150" width="150" points="" onclick="scoreboard_sp(1)" />
+   <input type="Image" id="test2" src="" height="150" width="150" points="" onclick="scoreboard_sp(2)" />
+   <input type="Image" id="test3" src="" height="150" width="150" points="" onclick="scoreboard_sp(3)" />
+   <input type="Image" id="test4" src="" height="150" width="150" points="" onclick="scoreboard_sp(4)" />
+   <input type="Image" id="test5" src="" height="150" width="150" points="" onclick="scoreboard_sp(5)" />
+
+   <!-- <input type="Image" id="test1" src="{{ site.baseurl }}/images/hamburger-frontend.jpg" height="150" width="150" onclick="scoreboard(1000)" />
+   <input type="Image" id="test2" src="{{ site.baseurl }}/images/fries-frontend.jpg" height="150" width="150" onclick="scoreboard(-200)" /> -->
+
+   <script>   
+
+      function get_images() {
+         // set image
+         document.getElementById("test1").src = foodimages[0].image;
+         document.getElementById("test2").src = foodimages[1].image;
+         document.getElementById("test3").src = foodimages[1].image;
+         document.getElementById("test4").src = foodimages[1].image;
+         document.getElementById("test5").src = foodimages[1].image;
+   
+         // set points
+         document.getElementById("test1").points = parseInt(foodimages[0].points);
+         document.getElementById("test2").points = parseInt(foodimages[1].points);
+         document.getElementById("test3").points = parseInt(foodimages[1].points);
+         document.getElementById("test4").points = parseInt(foodimages[1].points);
+         document.getElementById("test5").points = parseInt(foodimages[1].points);
+      }
+
+      var score = 0;
+      function scoreboard_sp(idid) {
+         if (idid == 1) {
+            points = document.getElementById("test1").points;
+         } else if (idid == 2) {
+            points = document.getElementById("test2").points;
+         } else if (idid == 3) {
+            points = document.getElementById("test3").points;
+         } else if (idid == 4) {
+            points = document.getElementById("test4").points;
+         } else if (idid == 5) {
+            points = document.getElementById("test5").points;
+         } else {
+            points = 0;
+         }
+         score = score + points;
+         console.log(score);
+      }
+      
+      // function scoreboard(points) {
+      //    score = score + points;
+      //    console.log(score);
+      // }
+
+      function moveimage(idid) {
+         var test = document.getElementById(idid);
+      // let w_screen = window.screen.availWidth - 150;
+      // let h_screen = window.screen.availHeight - 150;
+      test.style.top = Math.floor((Math.random() * 500) + 1) + "px";
+      test.style.left = Math.floor((Math.random() * 300) + 1) + "px";
+      test.style.visibility = 'visible';
+      }
+      
+      function clearimage(idid) {
+         var clear1 = document.getElementById(idid)
+         clear1.style.visibility = 'hidden';
+      }
+
+      function clearimages() {
+         clearimage("test1");
+         clearimage("test2");
+         clearimage("test3");
+         clearimage("test4");
+         clearimage("test5");
+      }
+      
+      function stop_moveimage(moveimage_interval) {
+         clearInterval(moveimage_interval);
+         clearimages();
+      }
+   
+
+      function onscreen() {
+         clearimages();
+         something = Math.ceil(Math.random() * 5);
+
+      if (something >= 1) {
+      moveimage("test1");
+      //moveimage_interval = setInterval(moveimage, 1000, "test1");
+      } 
+      if (something >= 2) {
+      moveimage("test2");
+      //moveimage_interval2 = setInterval(moveimage, 1000, "test2");
+      }
+      if (something >= 3) {
+      moveimage("test3");
+      //moveimage_interval3 = setInterval(moveimage, 1000, "test3");
+      }
+      if (something >= 4) {
+      moveimage("test4");
+      //moveimage_interval4 = setInterval(moveimage, 1000, "test4");
+      }
+      if (something >= 5) {
+      moveimage("test5");
+      //moveimage_interval5 = setInterval(moveimage, 1000, "test5");
+      }
+
+      // document.write("Score: " + score + " points");
+      }
+      
+      get_images();
+      thing = setInterval(onscreen, 1000);
+      image_timeout = setTimeout(stop_moveimage, 10000, thing);
+
+         
+
+   </script>
+</body>
       <div class="wrapper">
 
 <section>
