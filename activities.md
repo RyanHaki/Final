@@ -252,7 +252,7 @@ function favourite_recipe() {
           })
       }).then(Response => {
           document.getElementById("results").style.overflow = "auto";
-          recipies = {};
+          nutrients = {};
           Response.json().then(Data => {
               if (Data.length > 0) {
                   var html = ``;
