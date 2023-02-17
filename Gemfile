@@ -9,3 +9,5 @@ gem "nokogiri"
 gem 'rack', '~> 2.2.4'
 gem 'rspec'
 #gem "execjs", "~> 2.8"
+
+gem "webrick", "~> 1.8"

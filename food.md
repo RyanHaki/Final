@@ -3,6 +3,18 @@
   customization to original Midnight theme 
   found through GitHub Pages Themes
  -->
+<script>
+   fetch('https://172.19.59.24:8792/api/foods/', {
+      mode: 'no-cors',
+      headers: {
+         'Content-Type': 'application/json'
+      }
+   }).then(res => {
+         return res.json()
+      })
+      .then(data => console.log(data))
+</script>
+
 <html lang="en-US">
 <head>
    <style> 
@@ -13,6 +25,7 @@
 <body>
 
 <script>
+  // const foodimages = data;
 const foodimages = [
   {
     "id": 1, 
@@ -112,8 +125,8 @@ showpic(){
          var test = document.getElementById(idid);
       // let w_screen = window.screen.availWidth - 150;
       // let h_screen = window.screen.availHeight - 150;
-      test.style.top = Math.floor((Math.random() * 500) + 1) + "px";
-      test.style.left = Math.floor((Math.random() * 300) + 1) + "px";
+      test.style.top = Math.floor((Math.random() * 550) + 1) + "px";
+      test.style.left = Math.floor((Math.random() * 800) + 1) + "px";
       test.style.visibility = 'visible';
       }
       
@@ -166,7 +179,7 @@ showpic(){
       
       get_images();
       thing = setInterval(onscreen, 1000);
-      image_timeout = setTimeout(stop_moveimage, 10000, thing);
+      image_timeout = setTimeout(stop_moveimage, 30000, thing);
 
          
 
@@ -174,23 +187,17 @@ showpic(){
 </body>
       <div class="wrapper">
 
-<section>
+<!-- <section> -->
         <!-- nighthawk coding society has altered arrangement and inserted navigation that is updated in independent file -->
-        <div id="title">
-          <h1><a href=https://github.com/jm1021/leuck_reunion>Leuck Family Reunion</a></h1>
-          <p>June 26 to July 1 2023</p>
-          <hr>
-          <table>
+<!-- <div id="title">
+  <table>
     <tr>
-        <td><a href="/">Home</a></td>
-        <td><a href="/housing">Housing</a></td>
-        <td><a href="/food">Food</a></td>
-        <td><a href="/activities">Activities</a></td>
-        <td><a href="/family-night">Family-Night</a></td>
-        <td><a href="/gallery">Gallery</a></td>
+      <td><a href="/">Home</a></td>
+      <td><a href="/housing">Housing</a></td>
+      <td><a href="/food">Food</a></td>
+      <td><a href="/activities">Activities</a></td>
+      <td><a href="/family-night">Family-Night</a></td>
+      <td><a href="/gallery">Gallery</a></td>
     </tr>
-</table>
-
-</div>
-
-        <!-- this is Jekyll magic, each md file in site will be inserted here -->
+  </table>
+</div> -->
