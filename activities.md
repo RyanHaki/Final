@@ -226,11 +226,10 @@ function return_to_search() {
       document.getElementById("instructions").style.display = "none";
   };
 function open_instructions(object) {
-      var instructions = recipies[object];
+      var instructions = nutrients;
       document.getElementById("search_page").style["display"] = "none";
       document.getElementById("instructions").style.display = "flex";
-      document.getElementById("youWillNeed").innerHTML = instructions[1];
-      document.getElementById("method").innerHTML = instructions[0];
+      document.getElementById("youWillNeed").innerHTML = instructions["text"];
   };
 function favourite_recipe() {
       if (!logged_in) {
