@@ -10,10 +10,6 @@ week: 8
 type: pbl
 ---
 
-{% include nav_data.html %}
-
-[Review Frontend Code](https://raw.githubusercontent.com/nighthawkcoders/APCSP/master/_posts/2022-07-10-PBL-rapidapi.md), [Review Backend Code](https://github.com/nighthawkcoders/flask_portfolio/blob/main/api/covid.py)
-
 <!-- HTML table fragment for page -->
 <table>
   <thead>
