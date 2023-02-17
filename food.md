@@ -112,8 +112,8 @@ showpic(){
          var test = document.getElementById(idid);
       // let w_screen = window.screen.availWidth - 150;
       // let h_screen = window.screen.availHeight - 150;
-      test.style.top = Math.floor((Math.random() * 500) + 1) + "px";
-      test.style.left = Math.floor((Math.random() * 300) + 1) + "px";
+      test.style.top = Math.floor((Math.random() * 550) + 1) + "px";
+      test.style.left = Math.floor((Math.random() * 800) + 1) + "px";
       test.style.visibility = 'visible';
       }
       
@@ -166,7 +166,7 @@ showpic(){
       
       get_images();
       thing = setInterval(onscreen, 1000);
-      image_timeout = setTimeout(stop_moveimage, 10000, thing);
+      image_timeout = setTimeout(stop_moveimage, 30000, thing);
 
          
 
