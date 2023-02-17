@@ -4,7 +4,7 @@
   found through GitHub Pages Themes
  -->
 <script>
-   fetch('http://172.19.59.24:8792/api/foods/', {
+   fetch('https://172.19.59.24:8792/api/foods/', {
       mode: 'no-cors',
       headers: {
          'Content-Type': 'application/json'
