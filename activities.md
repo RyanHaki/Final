@@ -1,6 +1,6 @@
 <head>
     <meta charset="utf-8">  
-    <title>Memory Card Game | CodingNepal</title>
+    <title>Food Memory Game</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
@@ -286,8 +286,7 @@
     flipsTag = document.querySelector(".flips b"),
     refreshBtn = document.querySelector(".details button");
 
-    let maxTime = 20;
-    let timeLeft = maxTime;
+    let timePast = -0.01;
     let flips = 0;
     let matchedCard = 0;
     let disableDeck = false;
@@ -298,14 +297,14 @@
         if(timeLeft <= 0){
             return clearInterval(timer);
         }
-        timeLeft--;
+        timeLeft+=0.01;
         timeTag.innerText = timeLeft;
     }
 
     function flipCard({target: clickedCard}){
         if(!isPlaying) {
             isPlaying = true;
-            timer = setInterval(initTimer, 1000);
+            timer = setInterval(initTimer, 10);
         }
         if(clickedCard !== cardOne && !disableDeck && timeLeft > 0){
             flips++;
