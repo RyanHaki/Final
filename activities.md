@@ -295,7 +295,7 @@
 
     function initTimer(){
         timePast+=0.01;
-        timeTag.innerText = timePast;
+        timeTag.innerText = timePast.toFixed(2);
     }
 
     function flipCard({target: clickedCard}){
@@ -346,7 +346,7 @@
         flips = matchedCard = 0;
         cardOne = cardTwo = "";
         clearInterval(timer);
-        timeTag.innerText = timePast;
+        timeTag.innerText = timePast.toFixed(2);
         flipsTag.innerText = flips;
         disableDeck = isPlaying = false;
         let arr = [1, 2, 3, 4, 5, 6, 1, 2, 3, 4, 5, 6];
