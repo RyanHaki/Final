@@ -338,7 +338,7 @@
             cardTwo.classList.remove("shake", "flip");
             cardOne = cardTwo = "";
             disableDeck = false;
-        }, 1200);
+        }, 400);
     }
 
     function shuffleCard() {
