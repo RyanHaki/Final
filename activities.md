@@ -286,7 +286,7 @@
     flipsTag = document.querySelector(".flips b"),
     refreshBtn = document.querySelector(".details button");
 
-    let timePast = -0.01;
+    let timePast = 0;
     let flips = 0;
     let matchedCard = 0;
     let disableDeck = false;
@@ -306,7 +306,7 @@
             isPlaying = true;
             timer = setInterval(initTimer, 10);
         }
-        if(clickedCard !== cardOne && !disableDeck && timePast > 0){
+        if(clickedCard !== cardOne && !disableDeck && timeLeft > 0){
             flips++;
             flipsTag.innerText = flips;
             clickedCard.classList.add("flip");
@@ -324,7 +324,7 @@
     function matchCards(img1, img2) {
         if(img1 === img2) {
             matchedCard++;
-            if(matchedCard == 6 && timePast > 0) {
+            if(matchedCard == 6 && timeLeft > 0) {
                 return clearInterval(timer);
             }
             cardOne.removeEventListener("click", flipCard);
@@ -345,11 +345,11 @@
     }
 
     function shuffleCard() {
-        timePast = -0.01;
+        timePast = 0;
         flips = matchedCard = 0;
         cardOne = cardTwo = "";
         clearInterval(timer);
-        timeTag.innerText = timePast;
+        timeTag.innerText = timeLeft;
         flipsTag.innerText = flips;
         disableDeck = isPlaying = false;
         let arr = [1, 2, 3, 4, 5, 6, 1, 2, 3, 4, 5, 6];
