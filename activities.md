@@ -294,9 +294,6 @@
     let cardOne, cardTwo, timer;
 
     function initTimer(){
-        if(timePast <= 0){
-            return clearInterval(timer);
-        }
         timePast+=0.01;
         timeTag.innerText = timePast;
     }
