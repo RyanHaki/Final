@@ -2,5 +2,5 @@
 <!---
 Markdown Format takes entire column
 -->
-https://realgotweb.duckdns.org/snakegame
+[Snake Game](https://realgotweb.duckdns.org/snakegame)
 
