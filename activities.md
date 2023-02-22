@@ -319,14 +319,10 @@
     }
 
     function matchCards(img1, img2) {
-        alert(img1)
         if(img1 === img2){
-            if (img1===`images/img-1.png` or img1===`images/img-2.png`){
-                timePast+=5;
-            } else {
-                matchedCard++;
-            }
-            if(matchedCard == 4){
+            alert(img1);
+            matchedCard++;
+            if(matchedCard == 6){
                 return clearInterval(timer);
             }
             cardOne.removeEventListener("click", flipCard);
