@@ -332,7 +332,7 @@
         setTimeout(() => {
             cardOne.classList.add("shake");
             cardTwo.classList.add("shake");
-        }, 400);
+        }, 200);
         setTimeout(() => {
             cardOne.classList.remove("shake", "flip");
             cardTwo.classList.remove("shake", "flip");
