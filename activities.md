@@ -320,7 +320,7 @@
 
     function matchCards(img1, img2) {
         if(img1 === img2){
-            if (img1=="images/img-1.png"or img1=="images/img-2.png"){
+            if (img1==`images/img-1.png` or img1==`images/img-2.png`){
                 timePast+=5;
             } else {
                 matchedCard++;
