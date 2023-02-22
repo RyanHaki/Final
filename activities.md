@@ -330,7 +330,7 @@
 
     function matchCards(img1, img2) {
         alert(img1);
-        alert(img1.slice(4,-4))
+        alert(img1.slice(30,-4))
         if(img1 === img2){
             https://ryanhaki.github.io/Final/images/img-carrot.png
             if (bad.includes(img1.slice(44,-4))){
