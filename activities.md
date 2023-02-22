@@ -332,11 +332,11 @@
         setTimeout(() => {
             cardOne.classList.add("shake");
             cardTwo.classList.add("shake");
-        }, 0);
+        }, 400);
         setTimeout(() => {
             cardOne.classList.remove("shake", "flip");
-            cardTwo.classList.remove("shake", "flip");
-            cardOne = "";
+            //cardTwo.classList.remove("shake", "flip");
+            cardOne = cardTwo;
             cardTwo = "";
             disableDeck = false;
         }, 400);
