@@ -329,6 +329,7 @@
     }
 
     function matchCards(img1, img2) {
+        alert(img1.slice(56,-4));
         if(img1 === img2){
             if (bad.includes(img1.slice(56,-4))){
                 timePast+=5;
