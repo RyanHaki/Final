@@ -272,7 +272,7 @@
             </div>
         </li>
         <div class="details">
-            <p class="time">Time: <span><b>20</b>s</span></p>
+            <p class="time">Time: <span><b>0</b>s</span></p>
             <p class="flips">Flips: <span><b>0</b></span></p>
             <button>Refresh</button>
         </div>
@@ -320,9 +320,13 @@
 
     function matchCards(img1, img2) {
         if(img1 === img2) {
-            matchedCard++;
-            if(matchedCard == 6){
-                return clearInterval(timer);
+            if (img1=="images/img-1.png" or img2=="images/img-2.png"){
+                timePast+=5
+            } else {
+                matchedCard++;
+                if(matchedCard == 4){
+                    return clearInterval(timer);
+                }
             }
             cardOne.removeEventListener("click", flipCard);
             cardTwo.removeEventListener("click", flipCard);
