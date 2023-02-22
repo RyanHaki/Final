@@ -292,6 +292,16 @@
     let disableDeck = false;
     let isPlaying = false;
     let cardOne, cardTwo, timer;
+    let good = [
+        "almond", "apple", "avocado", "banana", "beans", "blueberry", 
+        "broccoli", "brusprouts", "carrot", "celery", "chickbreast", "cucumber",
+        "eggs", "kiwi", "lettuce", "mushroom", "orange", "salmon",
+        "spinach", "strawberry", "thethingyoudadlefttoget", "tomato", "walnut", "wholegrainbread"
+    ];
+    let bad = [
+        "bacon","burger", "chicknug", "chips", "donut", "fries",
+        "hotdog", "icecream", "pizza", "popcorn", "soda", "whitebread"
+    ];
 
     function initTimer(){
         timePast+=0.01;
@@ -320,8 +330,7 @@
 
     function matchCards(img1, img2) {
         if(img1 === img2){
-            alert(img1);
-            if (img1==`https://ryanhaki.github.io/Final/images/img-1.png` or img1==`https://ryanhaki.github.io/Final/images/img-2.png`){
+            if (bad.includes(img1.slice(56,-4))){
                 timePast+=5;
             } else {
                 matchedCard++;
@@ -337,14 +346,14 @@
         setTimeout(() => {
             cardOne.classList.add("shake");
             cardTwo.classList.add("shake");
-        }, 400);
+        }, 0);
         setTimeout(() => {
             cardOne.classList.remove("shake", "flip");
             //cardTwo.classList.remove("shake", "flip");
             cardOne = cardTwo;
             cardTwo = "";
             disableDeck = false;
-        }, 400);
+        }, 200);
     }
 
     function shuffleCard() {
@@ -355,16 +364,6 @@
         timeTag.innerText = timePast.toFixed(2);
         flipsTag.innerText = flips;
         disableDeck = isPlaying = false;
-        let good = [
-            "almond", "apple", "avocado", "banana", "beans", "blueberry", 
-            "broccoli", "brusprouts", "carrot", "celery", "chickbreast", "cucumber",
-            "eggs", "kiwi", "lettuce", "mushroom", "orange", "salmon",
-            "spinach", "strawberry", "thethingyoudadlefttoget", "tomato", "walnut", "wholegrainbread"
-        ];
-        let bad = [
-            "bacon","burger", "chicknug", "chips", "donut", "fries",
-            "hotdog", "icecream", "pizza", "popcorn", "soda", "whitebread"
-        ];
         good.sort(() => Math.random() > 0.5 ? 1 : -1);
         bad.sort(() => Math.random() > 0.5 ? 1 : -1);
         let arr = good.slice(0,3).concat(bad.slice(0,1));
