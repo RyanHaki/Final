@@ -322,10 +322,11 @@
         if(img1 === img2){
             if (img1=="/images/img-1.png"){
                 timePast+=5;
-            }
-            matchedCard++;
-            if(matchedCard == 6){
-                return clearInterval(timer);
+            } else {
+                matchedCard++;
+                if(matchedCard == 6){
+                    return clearInterval(timer);
+                }
             }
             cardOne.removeEventListener("click", flipCard);
             cardTwo.removeEventListener("click", flipCard);
