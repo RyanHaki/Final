@@ -319,9 +319,8 @@
     }
 
     function matchCards(img1, img2) {
-        alert(typeof img1);
         if(img1 === img2){
-            alert(img1=="images/img-1.png")
+            alert(`~/images/img-1.png`)
             if (img1=="images/img-1.png"){
                 timePast+=5;
             } else {
