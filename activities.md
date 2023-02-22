@@ -321,7 +321,7 @@
     function matchCards(img1, img2) {
         if(img1 === img2){
             alert(img1);
-            if (img1==`https://ryanhaki.github.io/Final/images/img-1.png`){
+            if (img1==`https://ryanhaki.github.io/Final/images/img-1.png` or img1==`https://ryanhaki.github.io/Final/images/img-2.png`){
                 timePast+=5;
             } else {
                 matchedCard++;
