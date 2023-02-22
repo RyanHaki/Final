@@ -324,7 +324,7 @@
                 timePast+=5;
             } else {
                 matchedCard++;
-                if(matchedCard == 6){
+                if(matchedCard == 4){
                     return clearInterval(timer);
                 }
             }
