@@ -355,7 +355,20 @@
         timeTag.innerText = timePast.toFixed(2);
         flipsTag.innerText = flips;
         disableDeck = isPlaying = false;
-        let arr = [1, 2, 3, 4, 5, 6, 1, 2, 3, 4, 5, 6];
+        let good = [
+            "almond", "apple", "avocado", "banana", "beans", "blueberry", 
+            "broccoli", "brusprouts", "carrot", "celery", "chickbreast", "cucumber",
+            "eggs", "kiwi", "lettuce", "mushroom", "orange", "salmon",
+            "spinach", "strawberry", "thethingyoudadlefttoget", "tomato", "walnut", "wholegrainbread"
+        ];
+        let bad = [
+            "bacon","burger", "chicknug", "chips", "donut", "fries",
+            "hotdog", "icecream", "pizza", "popcorn", "soda", "whitebread"
+        ];
+        good.sort(() => Math.random() > 0.5 ? 1 : -1);
+        bad.sort(() => Math.random() > 0.5 ? 1 : -1);
+        let arr = good.slice(0,3).concat(bad.slice(0,1));
+        arr = arr.concat(arr);
         arr.sort(() => Math.random() > 0.5 ? 1 : -1);
         cards.forEach((card, index) => {
             card.classList.remove("flip");
