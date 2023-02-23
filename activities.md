@@ -296,7 +296,7 @@
         "almond", "apple", "avocado", "banana", "beans", "blueberry", 
         "broccoli", "brusprouts", "carrot", "celery", "chickbreast", "cucumber",
         "eggs", "kiwi", "lettuce", "mushroom", "orange", "salmon",
-        "spinach", "strawberry", "thethingyoudadlefttoget", "tomato", "walnut", "wholegrainbread"
+        "spinach", "strawberry", "thethingyourdadlefttoget", "tomato", "walnut", "wholegrainbread"
     ];
     let bad = [
         "bacon","burger", "chicknug", "chips", "donut", "fries",
