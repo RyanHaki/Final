@@ -369,13 +369,13 @@
         let arr = good.slice(0,3).concat(bad.slice(0,1));
         arr = arr.concat(arr);
         for (let i=0;i<arr.length;i++){
-            console.log(arr[i]);
+            alert(arr[i]);
         }
         arr.sort(() => Math.random() > 0.5 ? 1 : -1);
         cards.forEach((card, index) => {
             card.classList.remove("flip");
             let imgTag = card.querySelector(".back-view img");
-            alert(arr[index]);
+            //alert(arr[index]);
             setTimeout(() => {
                 imgTag.src = `images/img-${arr[index]}.png`;
             }, 500);
