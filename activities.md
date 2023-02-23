@@ -329,7 +329,6 @@
     }
 
     function matchCards(img1, img2) {
-        alert(img1);
         if(img1 === img2){
             if (bad.includes(img1.slice(44,-4))){
                 timePast+=5;
@@ -373,6 +372,7 @@
         cards.forEach((card, index) => {
             card.classList.remove("flip");
             let imgTag = card.querySelector(".back-view img");
+            alert(arr[index]);
             setTimeout(() => {
                 imgTag.src = `images/img-${arr[index]}.png`;
             }, 500);
