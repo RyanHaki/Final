@@ -368,9 +368,6 @@
         bad.sort(() => Math.random() > 0.5 ? 1 : -1);
         let arr = good.slice(0,4).concat(bad.slice(0,2));
         arr = arr.concat(arr);
-        for (let i=0;i<arr.length;i++){
-            alert(arr[i]);
-        }
         arr.sort(() => Math.random() > 0.5 ? 1 : -1);
         cards.forEach((card, index) => {
             card.classList.remove("flip");
