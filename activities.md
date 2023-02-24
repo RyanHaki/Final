@@ -336,6 +336,17 @@
                 card.classList.add("flip");
             }
         }
+        refreshBtn.innerText = "Results"
+        refreshBtn.setAttribute("onclick","showResults()")
+    }
+
+    function showResults(){
+        for (let i=0;i<cards.length;i++){
+            let card = cards[i];
+            if (!(card.classList.contains("flip"))){
+                card.style.display="none";
+            }
+        }
     }
 
     function matchCards(img1, img2) {
