@@ -327,6 +327,16 @@
             matchCards(cardOneImg, cardTwoImg);
         }
     }
+    
+    function endGame(){
+        clearInterval(timer);
+        for (let i=0;i<cards.length;i++){
+            let card = cards[i];
+            if (!(card.classList.contains("flip"))){
+                card.classList.add("flip");
+            }
+        }
+    }
 
     function matchCards(img1, img2) {
         if(img1 === img2){
@@ -335,7 +345,7 @@
             } else {
                 matchedCard++;
                 if(matchedCard == 4){
-                    return clearInterval(timer);
+                    return endGame();
                 }
             }
             cardOne.removeEventListener("click", flipCard);
