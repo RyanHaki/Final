@@ -330,7 +330,6 @@
     
     function endGame(){
         clearInterval(timer);
-        wait(400);
         for (let i=0;i<cards.length;i++){
             let card = cards[i];
             if (!(card.classList.contains("flip"))){
