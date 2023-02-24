@@ -330,12 +330,14 @@
     
     function endGame(){
         clearInterval(timer);
-        for (let i=0;i<cards.length;i++){
-            let card = cards[i];
-            if (!(card.classList.contains("flip"))){
-                card.classList.add("flip");
+        setTimeout(() => {
+            for (let i=0;i<cards.length;i++){
+                let card = cards[i];
+                if (!(card.classList.contains("flip"))){
+                    card.classList.add("flip");
+                }
             }
-        }
+        }, 400);
     }
 
     function matchCards(img1, img2) {
