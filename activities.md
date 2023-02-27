@@ -342,7 +342,7 @@
         refreshBtn.setAttribute("onclick","showResults()")
         let time = timeTag.innerText;
         let flips = flipsTag.innerText;
-        let data = {name:"jesus", time:time, flips:flips,}
+        let data = {name:"jesus", time:time, flips:flips}
         console.log(JSON.stringify(data))
         $.ajax({
             type: 'POST',
