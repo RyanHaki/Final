@@ -1,4 +1,3 @@
-{% include Submenu.html %}
 <head>
     <meta charset="utf-8">
     <title>Food Memory Game</title>
@@ -359,6 +358,8 @@
                 console.log(error);
             }
         });
+        let response = await fetch('http://localhost:8792/api/match');
+        console.log(response);
     }
 
     function showResults(){
