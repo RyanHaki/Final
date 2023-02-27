@@ -360,7 +360,7 @@
         });
         fetch('http://localhost:8792/api/match')
         .then (data =>{
-            console.log(data);
+            console.log(JSON.stringify(data));
         });
     }
 
