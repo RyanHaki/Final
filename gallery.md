@@ -1,3 +1,4 @@
+{% include Submenu.html %}
 ## Snake Game
 <!---
 Markdown Format takes entire column

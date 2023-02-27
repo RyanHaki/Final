@@ -353,31 +353,6 @@
         <p class='bubbly' id="nameFull"></p>
         <h2 class="uid">User ID</h2>
         <p class='bubbly' id="usernameID"></p>
-        <button class="cancel" onclick="openFormPwd()">Change Password</button>
-        <button class="btn" onclick="openFormDel()">Delete Account</button>
-        <div class="del" id="del">
-            <form class="form-container">
-                <h2>Delete Account</h2>
-                <input type="username" id="username" placeholder="Please enter your username" required>
-                <input type="password" id="pswd" placeholder="Please enter your password" required>
-                <p class="bubbly" id="warningText"><b>WARNING!</b> By clicking 'delete', you are removing your account from our system.</p>
-                <button type="button" class="btn delbtn" onclick="delAcc()">Delete</button>
-                <p class="alerts" id="alert2"></p>
-                <button type="button" class="cancel" onclick="closeForm()">Cancel</button>
-            </form>
-        </div>
-        <div class="change" id="changepwd">
-            <form class="form-container">
-                <h2>Change Password</h2>
-                <input type="username" id="userid" placeholder="Please enter your USERNAME" required>
-                <input type="password" id="old" placeholder="Please enter your OLD password" required>
-                <input type="password" id="new" placeholder="Please enter your NEW password" required>
-                <input type="password" id="newv" placeholder="Please re-enter your NEW password" required>
-                <button type="button" class="gbtn btn" onclick="change()">Update Password</button>
-                <p class="alerts" id="alert"></p>
-                <button type="button" class="cancel" onclick="closeForm()">Cancel</button>
-            </form>
-        </div>
     </div>
 </body>
 </html>
