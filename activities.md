@@ -322,7 +322,7 @@
             }
             cardTwo = clickedCard;
             disableDeck = true;
-            let cardOneImg = cardOne.querySelector(".back-view img").src,
+            let cardOneImg = cardOne.querySelector(".back-view img").src;
             cardTwoImg = cardTwo.querySelector(".back-view img").src;
             matchCards(cardOneImg, cardTwoImg);
         }
@@ -336,13 +336,12 @@
                 card.classList.add("flip");
             }
         }
-        refreshBtn.innerText = "Results"
-        refreshBtn.setAttribute("onclick","showResults()")
+        refreshBtn.innerText = "Results";
+        refreshBtn.setAttribute("onclick","showResults()");
         let time = timeTag.innerText;
         let flips = flipsTag.innerText;
-        let data = {name:"jaso", time:time, flips:flips}
-        console.log(JSON.stringify(data))
-        $.ajax({
+        let data = {name:"jaso", time:time, flips:flips};
+        console.log(JSON.stringify(data))$.ajax({
             type: 'POST',
             contentType: 'application/json',
             data: JSON.stringify(data),
@@ -357,7 +356,7 @@
                 console.log(error);
             }
         });
-        $.ajax({
+        console.log("asl")$.ajax({
             type: 'GET',
             dataType: 'application/json',
             url: 'http://localhost:8792/api/match',
