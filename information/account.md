@@ -203,7 +203,7 @@
           margin-right: 5%;
         }
     </style>
-    <script src="{{ site.baseurl }}/arcade/api.js">
+    <script src="{{ site.baseurl }}/information/api.js">
     </script>
     <script>
         function change() {

@@ -90,7 +90,7 @@
       <button id="login" type="button" onclick="window.location.href='{{ site.baseurl }}/';">Log In</button>
     </div>
   </body>
-  <script src="{{ site.baseurl }}/arcade/api.js"></script>
+  <script src="{{ site.baseurl }}/information/api.js"></script>
   <script>
       // Get the input fields
       var input = [document.getElementById("usrnm"), document.getElementById("name"), document.getElementById("pswd"), document.getElementById("pswdv")];

@@ -121,7 +121,7 @@
           localStorage.setItem("currentUser", data.uid);
           console.log("Success! Welcome user: " + localStorage.getItem('currentUser') + ", name: " + data.name)
           setTimeout(function() {
-            window.location.replace("https://ryanhaki.github.io/Final/arcade/account");
+            window.location.replace("https://ryanhaki.github.io/Final/information/account");
           }, 500);
         })
       })
