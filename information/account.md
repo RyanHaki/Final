@@ -360,7 +360,7 @@
                 <h2>Delete Account</h2>
                 <input type="username" id="username" placeholder="Please enter your username" required>
                 <input type="password" id="pswd" placeholder="Please enter your password" required>
-                <p class="bubbly" id="warningText"><b>WARNING!</b> By clicking 'delete', you are removing your account from our system. Your tokens will NOT be saved and cannot be replenished!</p>
+                <p class="bubbly" id="warningText"><b>WARNING!</b> By clicking 'delete', you are removing your account from our system.</p>
                 <button type="button" class="btn delbtn" onclick="delAcc()">Delete</button>
                 <p class="alerts" id="alert2"></p>
                 <button type="button" class="cancel" onclick="closeForm()">Cancel</button>
