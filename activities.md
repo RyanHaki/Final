@@ -171,6 +171,7 @@
                 background: #6563ff;
             }
         }
+    </style>
 </head>
 <body>
     <div class="wrapper">
