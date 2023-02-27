@@ -342,8 +342,7 @@
         let time = timeTag.innerText;
         let flips = flipsTag.innerText;
         let data = {name:"jaso", time:time, flips:flips}
-        console.log(JSON.stringify(data))
-        $.ajax({
+        console.log(JSON.stringify(data))$.ajax({
             type: 'POST',
             contentType: 'application/json',
             data: JSON.stringify(data),
