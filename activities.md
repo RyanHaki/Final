@@ -1,7 +1,9 @@
 <head>
-    <meta charset="utf-8">  
+    <meta charset="utf-8">
     <title>Food Memory Game</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
         *{
@@ -293,7 +295,7 @@
     let isPlaying = false;
     let cardOne, cardTwo, timer;
     let good = [
-        "almond", "apple", "avocado", "banana", "beans", "blueberry", 
+        "almond", "apple", "avocado", "banana", "beans", "blueberry",
         "broccoli", "brusprouts", "carrot", "celery", "chickbreast", "cucumber",
         "eggs", "kiwi", "lettuce", "mushroom", "orange", "salmon",
         "spinach", "strawberry", "thethingyourdadlefttoget", "tomato", "walnut", "wholegrainbread"
@@ -327,7 +329,7 @@
             matchCards(cardOneImg, cardTwoImg);
         }
     }
-    
+
     function endGame(){
         clearInterval(timer);
         for (let i=0;i<cards.length;i++){
@@ -338,6 +340,26 @@
         }
         refreshBtn.innerText = "Results"
         refreshBtn.setAttribute("onclick","showResults()")
+        let time = timeTag.innerText;
+        let flips = flipsTag.innerText;
+        let data = {name:"麦辣鸡腿堡", protein:time, fats:flips,carbs:"24"}
+        console.log(JSON.stringify(data))
+        $.ajax({
+                 type: 'POST',
+                contentType: 'application/json',
+                data: JSON.stringify(data),
+                dataType: 'json',
+                url: 'http://localhost:8086/api/foods/create',
+                success: function (e) {
+                    console.log("1111111");
+                    console.log(e);
+                },
+                error: function(error) {
+                console.log("22222222");
+                console.log(error);
+                }
+        });
+
     }
 
     function showResults(){
