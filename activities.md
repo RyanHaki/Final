@@ -345,21 +345,20 @@
         let data = {name:"麦辣鸡腿堡", protein:time, fats:flips,carbs:"24"}
         console.log(JSON.stringify(data))
         $.ajax({
-                 type: 'POST',
-                contentType: 'application/json',
-                data: JSON.stringify(data),
-                dataType: 'json',
-                url: 'http://localhost:8086/api/foods/create',
-                success: function (e) {
-                    console.log("1111111");
-                    console.log(e);
-                },
-                error: function(error) {
+            type: 'POST',
+            contentType: 'application/json',
+            data: JSON.stringify(data),
+            dataType: 'json',
+            url: 'http://localhost:8792/api/foods/create',
+            success: function (e) {
+                console.log("1111111");
+                console.log(e);
+            },
+            error: function(error) {
                 console.log("22222222");
                 console.log(error);
-                }
+            }
         });
-
     }
 
     function showResults(){
