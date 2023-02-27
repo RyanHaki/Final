@@ -358,8 +358,6 @@
                 console.log(error);
             }
         });
-        let response = await fetch('http://localhost:8792/api/match');
-        console.log(response);
     }
 
     function showResults(){
