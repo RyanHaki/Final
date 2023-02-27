@@ -91,7 +91,7 @@
       <div class="noacc">
         <p id="dontacc">Don't have an account?</p>
       </div>
-      <button id="signup" type="button" onclick="window.location.href='{{ site.baseurl }}/login/signup';">Sign up</button>
+      <button id="signup" type="button" onclick="window.location.href='{{ site.baseurl }}/information/login/signup';">Sign up</button>
 <script>
   function login() {
     userid = document.getElementById('usrnm');
