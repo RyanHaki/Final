@@ -76,7 +76,7 @@ function signUp() {
                 return res.json()
                 })
                 .then(data => {
-                    // store uid locally to be able to access the user's info around the arcade
+                    // store uid locally to be able to access the user's info around the information
                     localStorage.setItem("currentUser", data.uid)
                     localStorage.setItem("tokenAmt", 30);
                     console.log(localStorage.getItem('currentUser'))
