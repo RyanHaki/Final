@@ -84,7 +84,7 @@ function signUp() {
                 .catch(error => console.log('ERROR'))
             // redirecting to account page
             setTimeout(function() {
-                window.location.replace("https://ryanhaki.github.io/Final/arcade/account");
+                window.location.replace("https://ryanhaki.github.io/Final/information/account");
             }, 700);
         }
     }, 600);
