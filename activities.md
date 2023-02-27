@@ -337,11 +337,11 @@
                 card.classList.add("flip");
             }
         }
-        refreshBtn.innerText = "Results";
-        refreshBtn.setAttribute("onclick","showResults()");
+        refreshBtn.innerText = "Results"
+        refreshBtn.setAttribute("onclick","showResults()")
         let time = timeTag.innerText;
         let flips = flipsTag.innerText;
-        let data = {name:"jaso", time:time, flips:flips};
+        let data = {name:"jaso", time:time, flips:flips}
         console.log(JSON.stringify(data))$.ajax({
             type: 'POST',
             contentType: 'application/json',
