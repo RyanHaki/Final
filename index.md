@@ -1,42 +1,140 @@
-## Location
-> Browse [Coram Ranch Site](https://www.coramranch.com/) to learn about reunion location and surrounding community. 
-- [Video Tour](https://youtu.be/kX24Zv1CJZA)
-- [Google Maps 14251 Coram Rd, Shasta Lake, California 96089](https://www.google.com/maps/place/14251+Coram+Rd,+Shasta+Lake,+CA+96019/@40.707988,-122.44701,16z/data=!4m5!3m4!1s0x54d28be161c895ef:0xca3b8805b9b6a5ec!8m2!3d40.7079882!4d-122.4470104?hl=en)
-- ***NO PETS***
-
-## Schedule
-
-| Date | Day | Time | Event | Meet At | Coordinator |
-| --- | --- | --- | --- | --- | --- |
-| 6/26 | Monday | 3pm | Check in | Shasta Lakes | Frank and Judith |
-| --- | --- | 6pm | Dinner | Dining Room | Lisa |
-| --- | --- | 7pm | Leuck Greet | Dining Room | Frank and Judith |
-| 6/27 | Tuesday | 8am | Breakfast | Dining Room | Lisa |
-| --- | --- | 9:45am | Morning Huddle | Dining Room | Sherri|
-| --- | --- | 10am | Greet Games | Field and Court | Johnner, Lora, Shay|
-| --- | --- | 12pm | Make & Go Lunch | Dining Room | Lisa |
-| --- | --- | 2pm | Bike/Hike | Bike Rack | Johnner and Lora |
-| --- | --- | 6pm | Dinner hi| Dining Room | Sherri |
-| --- | --- | 7pm | Family Night | Dining Room | John and Mel |
-| 6/28 | Wednesday | 7:30 | Zumba | Court | Kira |
-| --- | --- | 8:30am | Breakfast | Dining | Lisa |
-| --- | --- | 10am | Pool Olympics | Pool Area | Annalyce, Peyton |
-| --- | --- | 12pm | Make & Go Lunch | Dining Room | Lisa |
-| --- | --- | 1pm | Spelunking | [Cars, 32 minutes travel](http://lakeshastacaverns.clickforward.com/group-tours) | Johnner and Lora|
-| --- | --- | 6pm | Dinner | Dining Room | Angela |
-| --- | --- | 7pm | Family Night | Dining Room | John and Mel |
-| 6/29 | Thursday | 8am | Breakfast | Dining Room | Lisa |
-| --- | --- | 10am | Field Olympics | Field | Jake, Taylor |
-| --- | --- | 12:30pm | Make & Go Lunch | Dining Room | Lisa |
-| --- | --- | 1pm | Boating | [Cars, 25 minutes travel](https://bridgebayhouseboats.com/houseboats/grand-sierra) | Jared |
-| --- | --- | 6pm | Dinner | Dining Room | Jared and Jeremiah |
-| --- | --- | 7pm | Family Night | Dining Room | John and Mel |
-| 6/30 | Friday | 7:30 | Zumba | Court | Lisa |
-| --- | --- | 8:30am | Breakfast | Dining | Kira |
-| --- | --- | 10am | Family Relays | Field or Court | Johnner |
-| --- | --- | 12pm | Make & Go Lunch | Dining Room | Lisa |
-| --- | --- | 1pm | Explore the area | You pick | Self coordinated |
-| --- | --- | 6pm | Dinner | Dining Room | John |
-| --- | --- | 7pm | Family Night | Dining Room |John and Mel |
-| 7/1 | Saturday | 8am | Breakfast | Dining Room | Lisa |
-| --- | --- | 10am | Check Out | Travel Home | Your it |
+{% include home.html %}
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Login</title>
+    <style>
+        h1 {
+          text-align: center;
+          font-size: 40px;
+          font-weight: 700;
+          color: #fcf6d9;
+          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        input.login {
+          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+          margin-top: 5%;
+          position: inline;
+          width: 50%;
+          margin-left: 25%;
+          margin-right: 30%;
+          padding: 2%;
+          font-size: 25px;
+          background-color: #242424;
+          color: #fcf6d9;
+          border: none;
+          border-radius: 5px;
+          border-bottom: 4px solid #f1cc0c;
+          transition-duration: 0.3s;
+        }
+        input.login:focus {
+          background-color: #4d4c4b;
+          outline: none;
+        }
+        button {
+          outline: none;
+          -webkit-tap-highlight-color: transparent;
+          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+          font-size: 20px;
+          margin-top: 4%; 
+          margin-bottom: 4%;
+          position: inline;
+          width: 40%;
+          margin-left: 30%;
+          margin-right: 30%;
+          padding: 2%;
+          border-radius: 8px;
+          background-color: #302f2f;
+          color: #f1cc0c;
+          border: none;
+          transition-duration: 0.3s;
+        }
+        button:hover {
+          color: #242424;
+          background-color: #f1cc0c;
+          width: 45%;
+          margin-left: 27.5%;
+          margin-right: 27.5%;
+          margin-bottom: 3%;
+          padding: 2.5%;
+        }
+        div.noacc {
+          margin-top: 4%;
+          margin-left: 25%;
+          margin-right: 25%;
+          position: inline;
+          width: 50%;
+        }
+        #dontacc {
+          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+          font-size: 25px;
+          text-align: center;
+          margin-bottom: 0%;          
+        }
+        #noWork {
+          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+          text-align: center;
+          font-size: 20px;
+          color: #ff2929;
+        }
+    </style>
+  </head>
+    <h1 class="header">
+      Log In
+    </h1>
+    <input type="username" class="login" id="usrnm" placeholder="Username" required>
+    <input type="password" class="login" id="pswd" placeholder="Password" required>
+    <div>
+    <br>
+      <button id="enter" type="button" onclick='login()'>Enter</button>
+      <p id="noWork"><p>
+      <div class="noacc">
+        <p id="dontacc">Don't have an account?</p>
+      </div>
+      <button id="signup" type="button" onclick="window.location.href='{{ site.baseurl }}/login/signup';">Sign up</button>
+<script>
+  function login() {
+    userid = document.getElementById('usrnm');
+    pswrd = document.getElementById('pswd');
+    p = document.getElementById('noWork');
+    fetch('https://fruitteam.duckdns.org/api/players/authenticate', {
+      method: 'POST',
+      headers: {
+          'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+          "uid": userid.value,
+          "password": pswrd.value
+      })  
+    })
+      .then(res => {
+        // trap error response from Web API
+        if (res.status !== 200) {
+          p.innerHTML = "Incorrect username and/or password. <br> If you don't have an account, you can sign up.";
+          userid.value = "";
+          pswrd.value = "";
+          return;
+        }
+        // Valid response will contain json data
+        res.json().then(data => {
+          localStorage.setItem("currentUser", data.uid);
+          console.log("Success! Welcome user: " + localStorage.getItem('currentUser') + ", name: " + data.name)
+          setTimeout(function() {
+            window.location.replace("https://ryanhaki.github.io/Final/arcade/account");
+          }, 500);
+        })
+      })
+  }
+  // Get the input field
+  var input = document.getElementById("pswd");
+  // Execute a function when the user presses a key on the keyboard
+  input.addEventListener("keypress", function(event) {
+    // If the user presses the "Enter" key on the keyboard
+    if (event.key === "Enter") {
+      event.preventDefault();
+      // Trigger the button element with a click
+      document.getElementById("enter").click();
+    }
+  });
+</script>
