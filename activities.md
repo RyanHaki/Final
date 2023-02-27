@@ -358,10 +358,8 @@
                 console.log(error);
             }
         });
-        fetch('http://localhost:8792/api/match')
-        .then (data =>{
-            console.log(JSON.stringify(data));
-        });
+        let response = await fetch('http://localhost:8792/api/match');
+        console.log(response);
     }
 
     function showResults(){
