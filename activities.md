@@ -343,15 +343,21 @@
         let flips = flipsTag.innerText;
         let data = {name:"jaso", time:time, flips:flips}
         console.log(JSON.stringify(data))
-        const options = {
-            method: 'POST',
-            headers: {
-                contentType: 'application/json',
-                dataType: 'json',
+        $.ajax({
+            type: 'POST',
+            contentType: 'application/json',
+            data: JSON.stringify(data),
+            dataType: 'json',
+            url: 'http://localhost:8972/api/match/create',
+            success: function (e) {
+                console.log("1111111");
+                console.log(e);
             },
-            body: JSON.stringify(data)
-        };
-        fetch('http://localhost:8792/api/match/create', options);
+            error: function(error) {
+                console.log("22222222");
+                console.log(error);
+            }
+        });
         fetch('http://localhost:8792/api/match')
         .then (data =>{
             console.log(data);
