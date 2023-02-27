@@ -150,15 +150,6 @@
           flex-direction: column;
           gap: 10px;
       }
-      #favouriteButton {
-          background-color: yellow;
-          color: black;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          gap: 5px;
-          margin-top: 10px;
-      }
       #nav {
           position: fixed;
           height: 100px;
@@ -233,12 +224,6 @@ function open_instructions(object) {
       document.getElementById("youWillNeed").innerHTML = instructions[1];
       document.getElementById("method").innerHTML = instructions[0];
   };
-function favourite_recipe() {
-      if (!logged_in) {
-          alert("You must be logged in!")
-      } else {
-};
-  }
  document.getElementById("searchButton").addEventListener("click", () => {
       document.getElementById("results").style.overflow = "hidden";
       document.getElementById("results").innerHTML = `<div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>`;
