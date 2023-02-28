@@ -349,9 +349,9 @@
             let card = cards[i];
             card.style.display="none";
         }
-        let time = time
-        let flips = flip
-        let data = {name:"jaso", time:time, flips:flips}
+        let time = timePast;
+        let flips = flips;
+        let data = {name:"jaso", time:time, flips:flips};
         console.log(JSON.stringify(data))
         fetch('https://fruitteam.duckdns.org/api/match/create', {
             method: 'POST',
