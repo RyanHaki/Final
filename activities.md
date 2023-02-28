@@ -355,7 +355,7 @@
             })
         fetch("https://fruitteam.duckdns.org/api/match")
          .then(response => {
-            console.log(response.json())})
+            console.log(JSON.stringify(response.json()))})
          .then(data => {
             getData = data;
             console.log(getData);
