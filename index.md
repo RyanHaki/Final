@@ -24,7 +24,7 @@
           color: #fcf6d9;
           border: none;
           border-radius: 5px;
-          border-bottom: 4px solid #f1cc0c;
+          border-bottom: 4px solid #000000;
           transition-duration: 0.3s;
         }
         input.login:focus {
