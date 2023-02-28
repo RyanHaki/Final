@@ -33,7 +33,7 @@
             margin-top: 25px;
             margin-bottom: 25px;
             text-align: center;
-            color: #f1cc0c;
+            color: #000000;
             padding: var(--padding);
             font-size: 20px;
             border-radius: 7px;
@@ -50,7 +50,7 @@
             margin-top: 25px;
             margin-bottom: 25px;
             text-align: center;
-            color: #f1cc0c;
+            color: #000000;
             padding: var(--padding);
             font-size: 12pt;
             border-radius: 7px;
@@ -114,13 +114,13 @@
             padding: 2%;
             border-radius: 8px;
             background-color: #302f2f;
-            color: #f1cc0c;
+            color: #000000;
             border: none;
             transition-duration: 0.3s;
         }
         .cancel:hover {
             color: #000;
-            background-color: #f1cc0c;
+            background-color: #000000;
         }
         .del {
             display: none;
@@ -164,7 +164,7 @@
             color: #fcf6d9;
             border: none;
             border-radius: 5px;
-            border-bottom: 4px solid #f1cc0c;
+            border-bottom: 4px solid #000000;
             transition-duration: 0.3s;
         }
         input:focus{

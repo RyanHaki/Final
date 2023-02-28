@@ -24,11 +24,11 @@
           color: #fcf6d9;
           border: none;
           border-radius: 5px;
-          border-bottom: 4px solid #f1cc0c;
+          border-bottom: 4px solid #000000;
           transition-duration: 0.3s;
         }
         input.login:focus {
-          border-bottom-color: #f1cc0c;
+          border-bottom-color: #000000;
           background-color: #4d4c4b;
           outline: none;
         }
@@ -46,13 +46,13 @@
           padding: 2%;
           border-radius: 8px;
           background-color: #302f2f;
-          color: #f1cc0c;
+          color: #000000;
           border: none;
           transition-duration: 0.3s;
         }
         button:hover {
           color: #242424;
-          background-color: #f1cc0c;
+          background-color: #000000;
           width: 45%;
           margin-left: 27.5%;
           margin-right: 27.5%;
