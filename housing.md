@@ -228,7 +228,7 @@ function open_instructions(object) {
       document.getElementById("results").style.overflow = "hidden";
       document.getElementById("results").innerHTML = `<div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>`;
       var content = document.getElementById("searchBar").value;
-      fetch("http://192.168.0.131:8792/api/search/", {
+      fetch("https://fruitteam.duckdns.org/api/search/", {
           "method": "POST",
           "headers": {
               "content-type": "application/json"

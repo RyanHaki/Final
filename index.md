@@ -97,7 +97,7 @@
     userid = document.getElementById('usrnm');
     pswrd = document.getElementById('pswd');
     p = document.getElementById('noWork');
-    fetch('http://192.168.0.131:8792/api/players/authenticate', {
+    fetch('https://fruitteam.duckdns.org/api/players/authenticate', {
       method: 'POST',
       headers: {
           'Content-Type': 'application/json'
