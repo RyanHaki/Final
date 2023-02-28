@@ -41,7 +41,7 @@
           color: black;
           border: 2px solid black;
       }
-      .lds-roller {
+      /* .lds-roller {
           display: inline-block;
           position: relative;
           width: 80px;
@@ -124,7 +124,7 @@
           100% {
               transform: rotate(360deg);
           }
-      }
+      } */
       button {
           background: black;
           border: 2px solid transparent;
