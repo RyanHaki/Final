@@ -76,7 +76,7 @@ function signUp() {
                 return res.json()
                 })
                 .then(data => {
-                    // store uid locally to be able to access the user's info around the arcade
+                    // store uid locally to be able to access the user's info 
                     localStorage.setItem("currentUser", data.uid)
                     localStorage.setItem("tokenAmt", 30);
                     console.log(localStorage.getItem('currentUser'))
@@ -84,7 +84,7 @@ function signUp() {
                 .catch(error => console.log('ERROR'))
             // redirecting to account page
             setTimeout(function() {
-                window.location.replace("https://ryanhaki.github.io/Final/arcade/account");
+                window.location.replace("https://ryanhaki.github.io/Final/information/account");
             }, 700);
         }
     }, 600);
