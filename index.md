@@ -45,13 +45,13 @@
           padding: 2%;
           border-radius: 8px;
           background-color: #302f2f;
-          color: #f1cc0c;
+          color: #000000;
           border: none;
           transition-duration: 0.3s;
         }
         button:hover {
-          color: #242424;
-          background-color: #f1cc0c;
+          color: #fff;
+          background-color: #000000;
           width: 45%;
           margin-left: 27.5%;
           margin-right: 27.5%;
