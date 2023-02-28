@@ -353,7 +353,9 @@
             .then(res => {
                 console.log(res);
             })
-        fetch("https://fruitteam.duckdns.org/api/match")
+        fetch("https://fruitteam.duckdns.org/api/match",{
+            mode: "no-cors"
+        })
          .then(response => {
             console.log(JSON.stringify(response.json()))})
          .then(data => {
