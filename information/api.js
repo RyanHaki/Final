@@ -69,14 +69,16 @@ function signUp() {
                 body: JSON.stringify({
                     "name": nm,
                     "password": pwd,
+                    "tokens": 30,
                     "uid": userid
                 })  
                 }).then(res => {
                 return res.json()
                 })
                 .then(data => {
-                    // store uid locally to be able to access the user's info around the information
+                    // store uid locally to be able to access the user's info 
                     localStorage.setItem("currentUser", data.uid)
+                    localStorage.setItem("tokenAmt", 30);
                     console.log(localStorage.getItem('currentUser'))
                     console.log(data)})
                 .catch(error => console.log('ERROR'))
