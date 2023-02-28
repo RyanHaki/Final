@@ -343,7 +343,7 @@
         let flips = flipsTag.innerText;
         let data = {name:"jaso", time:time, flips:flips}
         console.log(JSON.stringify(data))
-        fetch('https://fruitteam.duckdns.org/api/match', {
+        fetch('https://fruitteam.duckdns.org/api/match/create', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -353,6 +353,13 @@
             .then(res => {
                 console.log(res);
             })
+        fetch("https://fruitteam.duckdns.org/api/match")
+         .then(response => {
+            console.log(response.json())})
+         .then(data => {
+            getData = data;
+            console.log(getData);
+         )
     }
 
     function showResults(){
