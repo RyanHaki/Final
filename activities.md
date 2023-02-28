@@ -362,8 +362,8 @@
             })
             .then(res => {
                 console.log(res);
-                timeTag.innerText=res["time"];
-                flipsTag.innerText=res["flips"];
+                timeTag.innerText=time;
+                flipsTag.innerText=flips;
                 refreshBtn.innerText = "Retry"
                 refreshBtn.setAttribute("onclick","shufflecard()")
             })
