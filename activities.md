@@ -339,6 +339,14 @@
         }
         refreshBtn.innerText = "Results"
         refreshBtn.setAttribute("onclick","showResults()")
+        
+    }
+
+    function showResults(){
+        for (let i=0;i<cards.length;i++){
+            let card = cards[i];
+            card.style.display="none";
+        }
         let time = timeTag.innerText;
         let flips = flipsTag.innerText;
         let data = {name:"jaso", time:time, flips:flips}
@@ -352,23 +360,11 @@
             })
             .then(res => {
                 console.log(res);
+                timeTag.innerText=res["time"];
+                flipsTag.innerText=res["flips"];
+                refreshBtn.innerText = "Results"
+            refreshBtn.setAttribute("onclick","shufflecard()")
             })
-        fetch("https://fruitteam.duckdns.org/api/match")
-         .then(response => {
-            console.log(JSON.stringify(response.json()))})
-         .then(data => {
-            getData = data;
-            console.log(getData);
-        })
-    }
-
-    function showResults(){
-        for (let i=0;i<cards.length;i++){
-            let card = cards[i];
-            if (!(card.classList.contains("flip"))){
-                card.style.display="none";
-            }
-        }
     }
 
     function matchCards(img1, img2) {
@@ -400,6 +396,10 @@
     }
 
     function shuffleCard() {
+        for (let i=0;i<cards.length;i++){
+            let card = cards[i];
+            card.style.display="inline";
+        }
         timePast = 0;
         flips = matchedCard = 0;
         cardOne = cardTwo = "";
