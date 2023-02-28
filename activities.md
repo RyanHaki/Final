@@ -359,7 +359,7 @@
          .then(data => {
             getData = data;
             console.log(getData);
-         )
+        })
     }
 
     function showResults(){
