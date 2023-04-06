@@ -212,7 +212,7 @@
             const old = document.getElementById('old')
             const newP = document.getElementById('new')
             const newPv = document.getElementById('newv')
-        fetch('http://10.8.141.165:8792//api/players/authenticate', {
+        fetch('http://10.8.141.165:8792/api/players/authenticate', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
