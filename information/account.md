@@ -212,7 +212,7 @@
             const old = document.getElementById('old')
             const newP = document.getElementById('new')
             const newPv = document.getElementById('newv')
-        fetch('https://fruitteam.duckdns.org/api/players/authenticate', {
+        fetch('http://10.8.141.165:8792//api/players/authenticate', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -247,7 +247,7 @@
                 }
                 else {
                     // posting to database
-                    fetch('https://fruitteam.duckdns.org/api/players/update', {
+                    fetch('http://10.8.141.165:8792/api/players/update', {
                         method: 'PUT',
                         headers: {
                             'Content-Type': 'application/json'
@@ -301,7 +301,7 @@
             const alertid = document.getElementById('alert2');
             const usr = document.getElementById('username');
             const pswd = document.getElementById('pswd');
-            fetch('https://fruitteam.duckdns.org/api/players/authenticate', {
+            fetch('http://10.8.141.165:8792/api/players/authenticate', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -322,7 +322,7 @@
                     }
                     // Valid response will contain json data
                     res.json().then(data => {
-                            fetch('https://fruitteam.duckdns.org/api/players/delete', {
+                            fetch('http://10.8.141.165:8792/api/players/delete', {
                                 method: 'DELETE',
                                 headers: {
                                     'Content-Type': 'application/json'
