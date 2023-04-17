@@ -6,7 +6,7 @@ function signUp() {
     let pwd = document.getElementById('pswd').value;
     let pw2 = document.getElementById('pswdv').value;
 
-    fetch('https://fruitteam.duckdns.org/api/players/')
+    fetch('http://10.8.141.165:8792/api/players/')
     .then(response => {
         // trap error response from Web API
         if (response.status !== 200) {
@@ -61,7 +61,7 @@ function signUp() {
         }
         else {
             // posting to database
-            fetch('https://fruitteam.duckdns.org/api/players/create', {
+            fetch('http://10.8.141.165:8792/api/players/create', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -105,7 +105,7 @@ function showUserInfo() {
     const nameField = document.getElementById('nameFull');
     const idField = document.getElementById('usernameID');
     // fetch info from db
-    fetch('https://fruitteam.duckdns.org/api/players/')
+    fetch('http://10.8.141.165:8792/api/players/')
     .then(response => {
         // trap error response from Web API
         if (response.status !== 200) {
