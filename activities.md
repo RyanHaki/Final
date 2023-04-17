@@ -349,24 +349,6 @@
             let card = cards[i];
             card.style.display="none";
         }
-        let time = timePast;
-        let flips = flips;
-        let data = {name:"jaso", time:time, flips:flips};
-        console.log(JSON.stringify(data))
-        fetch('https://fruitteam.duckdns.org/api/match/create', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(data)  
-            })
-            .then(res => {
-                console.log(res);
-                timeTag.innerText=time;
-                flipsTag.innerText=flips;
-                refreshBtn.innerText = "Retry"
-                refreshBtn.setAttribute("onclick","shufflecard()")
-            })
     }
 
     function matchCards(img1, img2) {
